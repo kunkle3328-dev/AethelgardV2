@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Aethelgard | Research Knowledge Vault</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@100;300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #030303; color: #fafafa; font-family: 'Inter', sans-serif; margin: 0; overflow: hidden; -webkit-font-smoothing: antialiased; touch-action: manipulation; }
+        .orbitron { font-family: 'Orbitron', sans-serif; }
+        ::-webkit-scrollbar { width: 2px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #7f1d1d; }
+        .glass-3d { background: rgba(15, 15, 15, 0.4); backdrop-filter: blur(20px) saturate(160%); -webkit-backdrop-filter: blur(20px) saturate(160%); border: 1px solid rgba(255, 255, 255, 0.08); border-top: 1px solid rgba(255, 255, 255, 0.15); border-left: 1px solid rgba(255, 255, 255, 0.12); box-shadow: 0 4px 24px -1px rgba(0, 0, 0, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.05); border-radius: 1.25rem; }
+        .glass-3d-red { background: rgba(15, 5, 5, 0.6); backdrop-filter: blur(20px) saturate(160%); border: 1px solid rgba(220, 38, 38, 0.2); border-top: 1px solid rgba(220, 38, 38, 0.35); border-left: 1px solid rgba(220, 38, 38, 0.25); box-shadow: 0 8px 32px 0 rgba(220, 38, 38, 0.1), inset 0 1px 0 rgba(220, 38, 38, 0.2); }
+        @keyframes scanline { 0% { transform: translateY(-100%); } 100% { transform: translateY(100%); } }
+        .scanline { position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(to right, transparent, rgba(220, 38, 38, 0.4), transparent); opacity: 0.15; animation: scanline 6s linear infinite; }
+        @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        .text-glow-red { text-shadow: 0 0 15px rgba(220, 38, 38, 0.8); }
+        @keyframes progress { 0% { transform: translateX(-200%); } 100% { transform: translateX(200%); } }
+        .animate-progress { animation: progress 2.5s ease-in-out infinite; }
+        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #3f3f46; border-radius: 2px; }
+        .perspective-1000 { perspective: 1000px; }
+        @keyframes spin-slow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        .animate-spin-slow { animation: spin-slow 12s linear infinite; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom": "https://esm.sh/react-dom@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.35.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.475.0",
+    "d3": "https://esm.sh/d3@^7.9.0",
+    "zustand": "https://esm.sh/zustand@^5.0.3",
+    "fuse.js": "https://esm.sh/fuse.js@^7.0.0",
+    "path": "https://esm.sh/path@^0.12.7",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "url": "https://esm.sh/url@^0.11.4"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

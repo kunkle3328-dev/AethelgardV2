@@ -1,0 +1,8 @@
+{
+  "name": "Aethelgard Research Engine",
+  "description": "A high-performance research and knowledge vault combining the power of web-scale intelligence with a sophisticated local knowledge graph. Built for deep-dives and perpetual learning.",
+  "requestFramePermissions": [
+    "microphone",
+    "geolocation"
+  ]
+}
